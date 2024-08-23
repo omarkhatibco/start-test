@@ -1,0 +1,21 @@
+{
+	"name": "usemando.ai",
+	"private": true,
+	"packageManager": "bun@1.1.25",
+	"workspaces": ["apps/*", "libs/*"],
+	"scripts": {
+		"build": "turbo build --cache-dir=.turbo",
+		"dev": "turbo dev",
+		"lint": "biome check .",
+		"lint:fix": "biome check . --write",
+		"test": "turbo run test",
+		"test:watch": "turbo run test:watch"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@total-typescript/tsconfig": "^1.0.4",
+		"bun-types": "^1.1.25",
+		"turbo": "^2.0.14"
+	},
+	"trustedDependencies": ["@biomejs/biome", "@mando/*"]
+}

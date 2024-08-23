@@ -1,0 +1,40 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
+	"files": {
+		"ignore": [
+			"**/*/.next/*",
+			"**/*/_generated/*",
+			"**/*/node_modules/*",
+			"**/*/storybook-static/*",
+			"**/*/public/*",
+			"**/*/*.gen.*",
+			".turbo/*"
+		]
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"correctness": {},
+			"style": {
+				"noNonNullAssertion": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "single",
+			"trailingCommas": "all",
+			"semicolons": "asNeeded"
+		}
+	},
+	"json": {
+		"parser": {
+			"allowComments": true
+		}
+	}
+}

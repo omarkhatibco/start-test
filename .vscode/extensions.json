@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"biomejs.biome",
+		"ms-playwright.playwright",
+		"joshbolduc.commitlint",
+		"pflannery.vscode-versionlens"
+	]
+}

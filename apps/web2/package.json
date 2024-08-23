@@ -1,0 +1,29 @@
+{
+	"name": "web2",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "bunx --bun vinxi dev",
+		"build": "bunx --bun vinxi build",
+		"start": "bunx --bun vinxi start",
+		"test": "vitest",
+		"test:watch": "vitest --watch"
+	},
+	"dependencies": {
+		"@mando/design-system": "workspace:*",
+		"@mando/styled-system": "workspace:*",
+		"@tanstack/react-router": "^1.49.2",
+		"@tanstack/start": "^1.49.6",
+		"@vitejs/plugin-react": "^4.3.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"vinxi": "^0.4.1"
+	},
+	"devDependencies": {
+		"bun-types": "^1.1.25",
+		"@types/react": "^18.3.4",
+		"@types/react-dom": "^18.3.0",
+		"typescript": "^5.5.4"
+	}
+}

@@ -1,0 +1,25 @@
+// {
+// 	"extends": "@total-typescript/tsconfig/bundler/dom",
+// 	"compilerOptions": {
+// 		"jsx": "react-jsx",
+// 		"paths": {
+// 			"@/*": ["./app/*"]
+// 		},
+// 		"types": ["bun-types", "@testing-library/jest-dom/vitest", "vitest/globals"]
+// 	},
+// 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+// 	"exclude": ["node_modules"]
+// }
+
+{
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"moduleResolution": "Bundler",
+		"module": "Preserve",
+		"target": "ES2022",
+		"skipLibCheck": true,
+		"paths": {
+			"@/*": ["./app/*"]
+		}
+	}
+}
