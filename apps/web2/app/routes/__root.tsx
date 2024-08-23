@@ -5,6 +5,8 @@ import type React from 'react'
 
 import { DefaultCatchBoundary, NotFound } from '@/components'
 
+import { getHeaders } from 'vinxi/http'
+
 import cssUrl from '@/styles/globals.css?url'
 
 export const Route = createRootRoute({
@@ -35,6 +37,13 @@ export const Route = createRootRoute({
 	},
 	notFoundComponent: () => <NotFound />,
 	component: RootComponent,
+	beforeLoad: async () => {
+		const headers = await getHeaders()
+
+		return {
+			headers,
+		}
+	},
 })
 
 function RootComponent() {

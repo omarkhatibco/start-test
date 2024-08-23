@@ -1,4 +1,8 @@
-import { createFileRoute, useRouter } from '@tanstack/react-router'
+import {
+	createFileRoute,
+	useRouteContext,
+	useRouter,
+} from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/start'
 
 import { Button, Image } from '@mando/design-system'
@@ -24,8 +28,13 @@ export const Route = createFileRoute('/')({
 })
 
 function Home() {
+	const data = useRouteContext({
+		from: '__root__',
+	})
 	const router = useRouter()
 	const state = Route.useLoaderData()
+
+	console.log(data)
 
 	return (
 		<Box p={8}>
