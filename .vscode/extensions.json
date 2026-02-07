@@ -1,8 +1,8 @@
 {
-	"recommendations": [
-		"biomejs.biome",
-		"ms-playwright.playwright",
-		"joshbolduc.commitlint",
-		"pflannery.vscode-versionlens"
-	]
+  "recommendations": [
+    "biomejs.biome",
+    "ms-playwright.playwright",
+    "joshbolduc.commitlint",
+    "legalfina.npm-version-lens"
+  ]
 }
